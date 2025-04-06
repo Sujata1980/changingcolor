@@ -20,9 +20,15 @@ function App() {
       <h1 style = {{color}}>SUJATA AGARWAL</h1>
       
       
-      <button onClick={()=>changeColor("red")} style = {{background:"red" , color:"white", borderRadius:"10px",margin:"10px"}}>RedColor</button>
-      <button onClick={()=>changeColor("blue")} style = {{background:"blue" , color:"white"}}>BlueColor</button>
-      <button onClick={()=>changeColor("darkgreen")} style = {{background:"green" , color:"white"}}>GreenColor</button>
+      <button onClick={()=>changeColor("red")} 
+      style = {{background:"red" , color:"white", borderRadius:"5px",margin:"10px",padding:"10px"}}>
+      RedColor</button>
+      <button onClick={()=>changeColor("blue")} 
+      style = {{background:"blue" , color:"white",borderRadius:"5px",margin:"10px",padding:"10px"}}>
+      BlueColor</button>
+      <button onClick={()=>changeColor("darkgreen")} 
+      style = {{background:"green" , color:"white",borderRadius:"5px",margin:"10px",padding:"10px"}}>
+      GreenColor</button>
       
     </div>
   );
