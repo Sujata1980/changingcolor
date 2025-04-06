@@ -4,11 +4,10 @@ import './App.css';
 
 function App() {
 
-  const [text,setText] = useState(false);
+  const [color,changeColor] = useState("darkorange");
 
- const handleClick = () =>{
-    setText(!text)
-    }
+  
+ 
   
 
   
@@ -16,8 +15,14 @@ function App() {
     <div className="App">
 
       <h1>Changes Color</h1>
-      <h1 style = {{ color : text ? "red" : ""}}>SUJATA AGARWAL</h1>
-      <button onClick={handleClick}>ChangeColor</button>
+      {/* <h1 style = {{ color : text ? "red" : " "}}>SUJATA AGARWAL</h1> */}
+
+      <h1 style = {{color}}>SUJATA AGARWAL</h1>
+      
+      
+      <button onClick={()=>changeColor("red")}>RedColor</button>
+      <button onClick={()=>changeColor("blue")}>BlueColor</button>
+      <button onClick={()=>changeColor("darkgreen")}>GreenColor</button>
       
     </div>
   );
